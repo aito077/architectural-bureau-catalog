@@ -25,11 +25,27 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" style="background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(30,30,30,0.95) 100%), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop'); background-size: cover; background-position: center;">
             <div class="hero-content">
                 <h1>Designing Space for Living</h1>
                 <a href="#projects" class="btn-cta">View Portfolio</a>
             </div>
+        </section>
+
+        <section id="services" class="services-section" style="padding: 3rem 1.5rem; background-color: var(--card-bg, #2A2A2A); border-bottom: 1px solid var(--border-color, #333);">
+            <h2>Our Services</h2>
+            <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-muted, #A0A0A0);">
+                <p>• Full-cycle Architectural Design & Engineering</p>
+                <p>• Urban Planning & Spatial Development</p>
+                <p>• Interior Design & 3D Visualization</p>
+            </div>
+        </section>
+
+        <section id="philosophy" class="philosophy-section" style="padding: 3rem 1.5rem; border-bottom: 1px solid var(--border-color, #333);">
+            <h2>Our Philosophy</h2>
+            <p style="margin-top: 1rem; color: var(--text-muted, #A0A0A0); max-width: 600px; line-height: 1.6;">
+                We believe in minimalist aesthetics, sustainable building practices, and functional harmony. Every space we design is tailored to elevate human experiences while respecting the surrounding environment.
+            </p>
         </section>
 
         <section id="projects" class="grid-section">
@@ -87,6 +103,6 @@
     document.getElementById('theme-btn').addEventListener('click', () => {
         document.body.classList.toggle('light-theme');
     });
-</script>
+    </script>
 </body>
 </html>
